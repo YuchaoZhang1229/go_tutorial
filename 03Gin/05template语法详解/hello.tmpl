@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello</title>
+</head>
+<body>
+    <p>u1</p>
+    {{/* 移除空格 */}}
+    <p>Hello {{-  .u1.Name  -}}</p>
+    <p>性别：{{.u1.Gender}}</p>
+    <p>年龄：{{.u1.Age}}</p>
+
+    {{/* 遇事不决, 先写注释 */}}
+
+    <p>m1</p>
+    <p>Hello {{.m1.name}}</p>
+    <p>性别：{{.m1.gender}}</p>
+    <p>年龄：{{.m1.age}}</p>
+
+    {{/* 变量 */}}
+    {{ $v1 := 100 }}
+    {{ $age := .m1.age }}
+
+    {{/* 条件判断 */}}
+    <hr>
+    {{ if $v1}}
+    {{ $v1 }}
+    {{else}}
+    啥也没有
+    {{end}}
+
+    {{/* 条件判断 + 比较函数 */}}
+    <hr>
+    {{ if lt .m1.age 22}}
+    好好上学
+    {{else}}
+    好好工作
+    {{end}}
+
+    {{/* range */}}
+    <hr>
+    {{ range $idx, $hobby := .hobby }}
+        <p>{{$idx}} - {{$hobby}}</p>
+    {{else}}
+         没啥爱好
+    {{end}}
+
+    {{/* with */}}
+    <hr>
+    {{ with .m1 }}
+    <p>m1</p>
+    <p>Hello {{.name}}</p>
+    <p>性别：{{.gender}}</p>
+    <p>年龄：{{.age}}</p>
+    {{end}}
+
+    {{/* index */}}
+    <hr>
+    {{index .hobby 2}}
+</body>
+</html>
