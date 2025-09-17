@@ -34,3 +34,8 @@ Gin除了支持上面表格里列的server、router、middleware和template之�
 * Middleware Extendtable：可以自定义中间件。Gin除了自带的官方中间件之外，还支持用户自定义中间件，甚至可以把自己开发的中间件提交到[官方代码仓库](https://github.com/gin-gonic/contrib)里。
 
 Gin本身不支持ORM，如果想在Gin框架里使用ORM，可以选择使用第三方的ORM，比如[gorm](https://github.com/go-gorm/gorm)。
+
+
+# References
+* https://gin-gonic.com/
+* https://github.com/mingrammer/go-web-framework-stars
