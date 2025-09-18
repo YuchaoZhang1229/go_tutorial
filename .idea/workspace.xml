@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/03Gin/11gin获取querystring参数/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03Gin/11gin获取querystring参数/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/12gin获取form参数/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/12gin获取form参数/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/12gin获取form参数/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/12gin获取form参数/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -43,6 +46,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "DefaultHtmlFileTemplate": "HTML File",
     "Go 构建.go build 03Gin/01Web本质.executor": "Run",
     "Go 构建.go build 03Gin/02gin框架初识.executor": "Run",
     "Go 构建.go build 03Gin/03RESTfulAPI.executor": "Run",
