@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/03Gin/13gin获取path参数/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03Gin/13gin获取path参数/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/14gin参数绑定/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/14gin参数绑定/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03Gin/13gin获取path参数/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/03Gin/13gin获取path参数/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +53,7 @@
     "Go 构建.go build 03Gin/06template嵌套.executor": "Run",
     "Go 构建.go build 03Gin/07template继承.executor": "Run",
     "Go 构建.go build 03Gin/11gin获取querystring参数.executor": "Run",
+    "Go 构建.go build 03Gin/14gin参数绑定.executor": "Run",
     "Go 构建.go build main.executor": "Run",
     "Go 构建.go build main.go.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -83,7 +85,7 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\01Web本质" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build 03Gin/11gin获取querystring参数">
+  <component name="RunManager" selected="Go 构建.go build 03Gin/14gin参数绑定">
     <configuration name="go build 03Gin/01Web本质" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$/03Gin" />
@@ -91,15 +93,6 @@
       <package value="03Gin/01Web本质" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/03Gin/01Web本质/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 03Gin/02gin框架初识" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin" />
-      <kind value="PACKAGE" />
-      <package value="03Gin/02gin框架初识" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/02gin框架初识/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build 03Gin/02gin框架初识" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -174,20 +167,29 @@
       <filePath value="$PROJECT_DIR$/03Gin/11gin获取querystring参数/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build 03Gin/14gin参数绑定" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$/03Gin" />
+      <kind value="PACKAGE" />
+      <package value="03Gin/14gin参数绑定" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/03Gin/14gin参数绑定/main.go" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go 构建.go build 03Gin/11gin获取querystring参数" />
+      <item itemvalue="Go 构建.go build 03Gin/14gin参数绑定" />
       <item itemvalue="Go 构建.go build 03Gin/07template继承" />
-      <item itemvalue="Go 构建.go build 03Gin/02gin框架初识" />
       <item itemvalue="Go 构建.go build 03Gin/03RESTfulAPI" />
       <item itemvalue="Go 构建.go build 03Gin/04template初识" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build 03Gin/14gin参数绑定" />
         <item itemvalue="Go 构建.go build 03Gin/11gin获取querystring参数" />
         <item itemvalue="Go 构建.go build 03Gin/07template继承" />
         <item itemvalue="Go 构建.go build 03Gin/04template初识" />
         <item itemvalue="Go 构建.go build 03Gin/03RESTfulAPI" />
-        <item itemvalue="Go 构建.go build 03Gin/02gin框架初识" />
       </list>
     </recent_temporary>
   </component>
