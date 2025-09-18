@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/03Gin/07template继承/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/08template补充/index.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/08template补充/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/08template补充/xss.tmpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
