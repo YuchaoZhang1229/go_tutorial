@@ -9,6 +9,30 @@ go get -u github.com/gin-gonic/gin
 go run main.go
 ```
 
+## 大纲
+1. Gin渲染 - 跳过 (
+   - 在主流和典型的“前后端分离”架构中，后端（Gin）主要负责提供 RESTful API
+2. Gin获取参数
+   - 获取querystring参数
+   - 获取form参数
+   - 获取json参数
+   - 获取path参数
+   - 参数绑定
+2. 文件上传
+    - 单个文件上传
+    - 多个文件上传
+3. 重定向
+    - HTTP重定向
+    - 路由重定向
+4. Gin路由
+    - 普通路由
+    - 路由组
+    - 路由原理
+5. Gin中间件
+   - 定义中间件
+   - 注册中间件
+   - 中间件注意事项
+
 ## Web框架需要做什么
 
 我们先思考下，一个完整的Web开发框架需要做哪些事情
@@ -34,7 +58,6 @@ Gin除了支持上面表格里列的server、router、middleware和template之�
 * Middleware Extendtable：可以自定义中间件。Gin除了自带的官方中间件之外，还支持用户自定义中间件，甚至可以把自己开发的中间件提交到[官方代码仓库](https://github.com/gin-gonic/contrib)里。
 
 Gin本身不支持ORM，如果想在Gin框架里使用ORM，可以选择使用第三方的ORM，比如[gorm](https://github.com/go-gorm/gorm)。
-
 
 # References
 * https://gin-gonic.com/
