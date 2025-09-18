@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/03Gin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/03Gin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/07template继承/home.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/07template继承/index.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/07template继承/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/07template继承/templates/base.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/07template继承/templates/home2.tmpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03Gin/07template继承/templates/index2.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,34 +44,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go 构建.go build 03Gin/01Web本质.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/02gin框架初识.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/03RESTfulAPI.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/04template初识.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/06template嵌套.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.go.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/web3/go/go-tutorial/03Gin/05template语法详解&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go 构建.go build 03Gin/01Web本质.executor": "Run",
+    "Go 构建.go build 03Gin/02gin框架初识.executor": "Run",
+    "Go 构建.go build 03Gin/03RESTfulAPI.executor": "Run",
+    "Go 构建.go build 03Gin/04template初识.executor": "Run",
+    "Go 构建.go build 03Gin/06template嵌套.executor": "Run",
+    "Go 构建.go build 03Gin/07template继承.executor": "Run",
+    "Go 构建.go build main.executor": "Run",
+    "Go 构建.go build main.go.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "E:/OneDrive/web3/go/go-tutorial/03Gin/05template语法详解",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\05template语法详解" />
@@ -75,7 +84,7 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\01Web本质" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build 03Gin/04template初识">
+  <component name="RunManager" selected="Go 构建.go build 03Gin/07template继承">
     <configuration name="go build 03Gin/01Web本质" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$/03Gin" />
@@ -112,29 +121,29 @@
       <filePath value="$PROJECT_DIR$/03Gin/04template初识/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 03Gin/07template继承" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin/01Web本质" />
+      <working_directory value="$PROJECT_DIR$/03Gin" />
       <kind value="PACKAGE" />
-      <package value="main" />
+      <package value="03Gin/07template继承" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/01Web本质/main.go" />
+      <filePath value="$PROJECT_DIR$/03Gin/07template继承/main.go" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go 构建.go build 03Gin/07template继承" />
       <item itemvalue="Go 构建.go build 03Gin/01Web本质" />
       <item itemvalue="Go 构建.go build 03Gin/02gin框架初识" />
       <item itemvalue="Go 构建.go build 03Gin/03RESTfulAPI" />
       <item itemvalue="Go 构建.go build 03Gin/04template初识" />
-      <item itemvalue="Go 构建.go build main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build 03Gin/07template继承" />
         <item itemvalue="Go 构建.go build 03Gin/04template初识" />
         <item itemvalue="Go 构建.go build 03Gin/03RESTfulAPI" />
         <item itemvalue="Go 构建.go build 03Gin/02gin框架初识" />
         <item itemvalue="Go 构建.go build 03Gin/01Web本质" />
-        <item itemvalue="Go 构建.go build main" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +167,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
