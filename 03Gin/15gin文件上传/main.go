@@ -7,6 +7,9 @@ import (
 	"path"
 )
 
+// 1. 访问http://127.0.0.1:8080/index, 上传文件
+// 2. 点击上传后, 会出发POST请求, 将上传的文件保存到服务器本地
+
 func main() {
 	r := gin.Default()
 	r.LoadHTMLFiles("index.html")
