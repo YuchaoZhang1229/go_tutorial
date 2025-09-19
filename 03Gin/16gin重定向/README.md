@@ -1,4 +1,4 @@
-## 🔀 Gin 框架重定向详解
+## Gin 重定向详解
 ### 1. 重定向的基本概念
 在 Web 开发中，重定向是指服务器接收到客户端请求后，返回一个包含新 URL 的特定状态码，引导客户端自动向新 URL 发起新请求的过程。在 Gin 框架中，重定向主要通过 `c.Redirect()` 方法实现
 
@@ -10,14 +10,14 @@ r.GET("/old", func(c *gin.Context) {
     c.Redirect(http.StatusMovedPermanently, "/new")
 })
 ```
-#### 外部重定向
+#### HTTP重定向
 外部重定向指向不同域名或完全不同的 URL：
 ```go
 r.GET("/baidu", func(c *gin.Context) {
     c.Redirect(http.StatusMovedPermanently, "https://www.baidu.com")
 })
 ```
-#### 内部重定向
+#### 路由内部重定向
 内部重定向是指在同一应用内将请求转发到不同的路由。Gin 提供了 HandleContext方法实现内部跳转
 ```go
 r.GET("/a", func(c *gin.Context) {
@@ -43,4 +43,4 @@ Gin 支持多种 HTTP 重定向状态码，正确选择状态码对 SEO 和浏�
 
 ### 4. 常见应用场景
 - **用户认证与权限控制**：当用户访问需要登录的资源而未认证时，**临时重定向 (302)** 到登录页面。登录成功后，再重定向回用户最初请求的页面
-- 等...
+- ......
