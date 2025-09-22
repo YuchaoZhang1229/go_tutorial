@@ -2,17 +2,31 @@
 ### 1. 创建记录
 - **功能**：向数据库插入单条新记录，会自动填充主键和追踪时间（CreatedAt/UpdatedAt）
 - **语法**：
+
+```go
 db.Create(&user)
+```
 
 ### 2. 用指定的字段创建记录
 - **功能**：使用`Select`或`Omit`来指定只创建某些字段或忽略某些字段。
 - **语法**：
-  - db.Select("Name", "Age").Create(&user)
-  - db.Omit("Age").Create(&user)
+```go
+db.Select("Name", "Age").Create(&user)
+db.Omit("Age").Create(&user)
+```
 
-### 3. 批量插入
-- 功能：在创建记录的生命周期（BeforeSave, BeforeCreate, AfterSave, AfterCreate）中执行自定义逻辑。
-- 语法：
+### 3.批量插入
+**功能**：通过切片批量插入记录，可指定每批次大小以提高效率。
+**语法**：
+
+```go
+db.Create(&users)
+db.CreateInBatches(&users, 100)
+```
+
+### 4. 创建钩子
+- **功能**：在创建记录的生命周期（BeforeSave, BeforeCreate, AfterSave, AfterCreate）中执行自定义逻辑。
+- **语法**：
 ```go
 func (u *User) BeforeCreate(tx *gorm.DB) (err error) { 
 	// 你的逻辑 
