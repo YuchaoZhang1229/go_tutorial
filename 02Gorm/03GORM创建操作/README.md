@@ -34,8 +34,9 @@ func (u *User) BeforeCreate(tx *gorm.DB) (err error) {
 ```
 
 ### 4. 根据 Map 创建
-功能：直接使用`map[string]interface{}`或 `[]map[string]interface{}{}` 来创建记录。但注意，此方式不会执行钩子方法，也不会保存关联且不会回写主键。
-语法：
+**功能**：直接使用`map[string]interface{}`或 `[]map[string]interface{}{}` 来创建记录。但注意，此方式不会执行钩子方法，也不会保存关联且不会回写主键。
+
+**语法**：
 ```go
 db.Model(&User{}).Create(map[string]interface{}{
 "Name": "jinzhu", "Age": 18,
