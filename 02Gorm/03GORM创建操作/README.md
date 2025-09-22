@@ -38,7 +38,28 @@ db.Model(&User{}).Create([]map[string]interface{}{
 `待续`
 
 ### 6. 高级选项
-- 关联创建-`待续`
-- 默认值-`待续`
-- Upsert 及冲突-`待续`
+#### 关联创建
+`待续`
+
+#### 默认值
+
+通过结构体tagd `efault` 为字段定义默认值。
+
+注意：零值（如0、""、false）都还会触发默认值，如果想避免的话，建议用指针或Scanner/Valuer接口。
+
+语法：
+```go
+type User struct { 
+	Name *int `gorm:"default:'小王子'"`
+}
+
+type User struct {
+    Name sql.NullString `gorm:"default:'小王子'"`
+}
+```
+
+
+#### Upsert 及冲突
+
+`待续`
 
