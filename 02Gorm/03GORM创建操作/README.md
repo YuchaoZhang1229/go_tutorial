@@ -50,7 +50,7 @@ db.Model(&User{}).Create([]map[string]interface{}{
 语法：
 ```go
 type User struct { 
-	Name *int `gorm:"default:'小王子'"`
+	Name *string `gorm:"default:'小王子'"`
 }
 
 type User struct {
