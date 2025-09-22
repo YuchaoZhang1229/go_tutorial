@@ -1,4 +1,4 @@
-## GORM连接数据库
+## GORM 连接数据库
 ### 1. 连接数据库
 GORM officially supports the databases `MySQL`, `PostgreSQL`, `GaussDB`, `SQLite`, `SQL Server`, and `TiDB`
 ```go
