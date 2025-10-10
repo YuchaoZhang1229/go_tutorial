@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	client, err := ethclient.Dial("https://cloudflare-eth.com")
+	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/<API_KEY>")
 	if err != nil {
 		log.Fatal(err)
 	}
