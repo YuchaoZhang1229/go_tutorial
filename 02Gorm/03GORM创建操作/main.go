@@ -27,7 +27,7 @@ func main() {
 
 	// 1.创建记录-单条
 	u1 := User{Description: "1.创建记录-单条", Name: sql.NullString{"", true}, Age: 18} // 在代码层面创建一个User对象
-	db.Create(&u1)                                                                      // 在数据库中创建了一行数据
+	db.Create(&u1)                                                                // 在数据库中创建了一行数据
 
 	// 2.用指定的字段创建记录-db.Select
 	u2 := User{Description: "2.用指定的字段创建记录-db.Select", Name: sql.NullString{"q1mi", true}, Age: 18}

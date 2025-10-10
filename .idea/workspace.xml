@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/03Gin/18gin中间件/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03Gin/18gin中间件/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/01客户端/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/03交易/01查询区块.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/03交易/02查询交易.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/03交易/03查询收据.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02Gorm/03GORM创建操作/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/02Gorm/03GORM创建操作/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
       <list>
         <option value="HTML File" />
         <option value="Go File" />
+        <option value="Go Application" />
       </list>
     </option>
   </component>
@@ -43,7 +47,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go Application&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Go 构建.go build 03Gin/01Web本质.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build 03Gin/02gin框架初识.executor&quot;: &quot;Run&quot;,
@@ -53,8 +57,12 @@
     &quot;Go 构建.go build 03Gin/07template继承.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build 03Gin/11gin获取querystring参数.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build 03Gin/14gin参数绑定.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build client.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build client.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build client/01客户端.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build client/03交易.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build main.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build main.go.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
@@ -67,7 +75,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/web3/go/go-tutorial/03Gin/05template语法详解&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/web3/go/go-tutorial&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -81,73 +89,12 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\02gin框架初识" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\03交易" />
+      <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\01Web本质" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build 03Gin/14gin参数绑定">
-    <configuration name="go build 03Gin/01Web本质" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin" />
-      <kind value="PACKAGE" />
-      <package value="03Gin/01Web本质" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/01Web本质/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 03Gin/02gin框架初识" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin" />
-      <kind value="PACKAGE" />
-      <package value="03Gin/02gin框架初识" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/02gin框架初识/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 03Gin/03RESTfulAPI" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin" />
-      <kind value="PACKAGE" />
-      <package value="03Gin/03RESTfulAPI" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/03RESTfulAPI/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 03Gin/03RESTfulAPI" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin" />
-      <kind value="PACKAGE" />
-      <package value="03Gin/03RESTfulAPI" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/03RESTfulAPI/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 03Gin/04template初识" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin" />
-      <kind value="PACKAGE" />
-      <package value="03Gin/04template初识" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/04template初识/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 03Gin/04template初识" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin" />
-      <kind value="PACKAGE" />
-      <package value="03Gin/04template初识" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/04template初识/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 03Gin/07template继承" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/03Gin" />
-      <kind value="PACKAGE" />
-      <package value="03Gin/07template继承" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/03Gin/07template继承/main.go" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go 构建.go build client">
     <configuration name="go build 03Gin/07template继承" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$/03Gin" />
@@ -175,22 +122,47 @@
       <filePath value="$PROJECT_DIR$/03Gin/14gin参数绑定/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$/04GO-Eth/01客户端" />
+      <kind value="PACKAGE" />
+      <package value="client" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/04GO-Eth/01客户端/client.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build client/03交易" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$/04GO-Eth" />
+      <kind value="PACKAGE" />
+      <package value="client/03交易" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/04GO-Eth/03交易/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/00Go_Task/Task1/main.go" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go 构建.go build 03Gin/01Web本质" />
-      <item itemvalue="Go 构建.go build 03Gin/02gin框架初识" />
+      <item itemvalue="Go 构建.go build 03Gin/07template继承" />
+      <item itemvalue="Go 构建.go build client/03交易" />
+      <item itemvalue="Go 构建.go build client" />
+      <item itemvalue="Go 构建.go build main.go" />
       <item itemvalue="Go 构建.go build 03Gin/11gin获取querystring参数" />
       <item itemvalue="Go 构建.go build 03Gin/14gin参数绑定" />
-      <item itemvalue="Go 构建.go build 03Gin/07template继承" />
-      <item itemvalue="Go 构建.go build 03Gin/03RESTfulAPI" />
-      <item itemvalue="Go 构建.go build 03Gin/04template初识" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build client" />
+        <item itemvalue="Go 构建.go build client/03交易" />
+        <item itemvalue="Go 构建.go build main.go" />
         <item itemvalue="Go 构建.go build 03Gin/14gin参数绑定" />
         <item itemvalue="Go 构建.go build 03Gin/11gin获取querystring参数" />
-        <item itemvalue="Go 构建.go build 03Gin/07template继承" />
-        <item itemvalue="Go 构建.go build 03Gin/04template初识" />
-        <item itemvalue="Go 构建.go build 03Gin/03RESTfulAPI" />
       </list>
     </recent_temporary>
   </component>
