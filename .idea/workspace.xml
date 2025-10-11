@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/04GO-Eth/07查询账户余额.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04GO-Eth/08查询代币余额.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/01客户端/client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/01查询区块.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/01查询区块.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/02查询交易.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/02查询交易.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/03查询收据.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/03查询收据.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/04创建新钱包.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/04创建新钱包.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/05ETH转账.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/05ETH转账.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/06代币转账.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/06代币转账.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/go.sum" beforeDir="false" />
-    </list>
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

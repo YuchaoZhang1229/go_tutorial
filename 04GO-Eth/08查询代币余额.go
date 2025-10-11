@@ -27,7 +27,7 @@ import (
 // abigen --abi=IERC20Metadata_sol_IERC20Metadata.abi --pkg=token --out=erc20.go
 
 func main() {
-	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/jHjyr-bsMbTa4uB-gfigcGghwCvG_iSz")
+	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/<API_KEY>")
 	if err != nil {
 		log.Fatal(err)
 	}
