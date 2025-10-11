@@ -40,8 +40,8 @@ func main() {
 		// 数据（Data）：通常用于调用智能合约时的输入参数。
 		// 接收方地址（To）：交易的目标地址。
 		fmt.Println("----------------------------交易信息----------------------------")
-		fmt.Println("交易哈希: ", tx.Hash().Hex())        // 0x20294a03e8766e9aeab58327fc4112756017c6c28f6f99c7722f4a29075601c5
-		fmt.Println("转账金额: ", tx.Value().String())    // 100000000000000000
+		fmt.Println("交易哈希: ", tx.Hash().Hex())            // 0x20294a03e8766e9aeab58327fc4112756017c6c28f6f99c7722f4a29075601c5
+		fmt.Println("转账金额: ", tx.Value().String())        // 100000000000000000
 		fmt.Println("Gas: ", tx.Gas())                    // 21000
 		fmt.Println("GasPrice: ", tx.GasPrice().Uint64()) // 100000000000
 		fmt.Println("Nonce: ", tx.Nonce())                // 245132
@@ -94,6 +94,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("isPending: ", isPending)      // isPending参数可以指示该交易是否还在等待被纳入区块的状态（待处理）
+	fmt.Println("isPending: ", isPending)  // isPending参数可以指示该交易是否还在等待被纳入区块的状态（待处理）
 	fmt.Println("交易哈希: ", tx.Hash().Hex()) // 0x20294a03e8766e9aeab58327fc4112756017c6c28f6f99c7722f4a29075601c5.Println(isPending)       // false
 }
