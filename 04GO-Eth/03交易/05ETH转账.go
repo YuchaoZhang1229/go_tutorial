@@ -19,7 +19,7 @@ func main() {
 		log.Fatal(err)
 	}
 	// TODO: 填写你的账户私钥
-	privateKey, err := crypto.HexToECDSA("a02a2b50874a4f6740500f92b524465c354236641ca49b584bed6704191f72d4")
+	privateKey, err := crypto.HexToECDSA("<YOUR_PRIVATE_KEY>")
 	if err != nil {
 		log.Fatal(err)
 	}
