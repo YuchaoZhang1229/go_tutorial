@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/01客户端/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/01客户端/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/03交易/04创建新钱包.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/02查询交易.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/03交易/02查询交易.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/03查询收据.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/03交易/03查询收据.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

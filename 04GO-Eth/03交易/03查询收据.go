@@ -11,6 +11,13 @@ import (
 	"github.com/ethereum/go-ethereum/rpc"
 )
 
+// 💎 核心要点总结
+// 连接节点：使用 ethclient.Dial通过RPC URL连接以太坊节点是交互的基础。
+// 收据查询方式：
+// - BlockReceipts, 通过 区块哈希blockHash 或 区块号blockNumber 查询收据
+// - TransactionReceipt, 通过 交易哈希 查询查询收据
+// 收据关键信息：交易收据中的 Status、Logs、TxHash、TransactionIndex和 ContractAddress等字段对于分析交易结果至关重要
+
 func main() {
 	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/<API_KEY>")
 	if err != nil {
@@ -52,8 +59,4 @@ func main() {
 	fmt.Println(receipt.TransactionIndex)      // 0
 	fmt.Println(receipt.ContractAddress.Hex()) // 0x0000000000000000000000000000000000000000
 
-	//💎 核心要点总结
-	//连接节点：使用 ethclient.Dial通过RPC URL连接以太坊节点是交互的基础。
-	//收据查询方式：BlockReceipts用于获取整个区块的交易收据，可通过区块哈希或区块号指定区块；TransactionReceipt用于查询单个交易的收据。
-	//收据关键信息：交易收据中的 Status、Logs、TxHash、TransactionIndex和 ContractAddress等字段对于分析交易结果至关重要
 }
