@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/04GO-Eth/03交易/04创建新钱包.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/03交易/05ETH转账.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/02查询交易.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/03交易/02查询交易.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/03查询收据.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/03交易/03查询收据.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04GO-Eth/03交易/04创建新钱包.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/03交易/04创建新钱包.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,7 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\01Web本质" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build client">
+  <component name="RunManager" selected="Go 构建.go build client/03交易">
     <configuration name="go build 03Gin/07template继承" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$/03Gin" />
