@@ -21,10 +21,10 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// privateKey, err := crypto.GenerateKey()
-	// privateKeyBytes := crypto.FromECDSA(privateKey)
-	// privateKeyHex := hex.EncodeToString(privateKeyBytes)
-	// fmt.Println("Private Key:", privateKeyHex)
+	//privateKey1, err := crypto.GenerateKey()
+	//privateKeyBytes := crypto.FromECDSA(privateKey1)
+	//privateKeyHex := hex.EncodeToString(privateKeyBytes)
+	//fmt.Println("Private Key:", privateKeyHex)
 
 	// 2. 加载私钥
 	privateKey, err := crypto.HexToECDSA("<YOUR_PRIVATE_KEY>")
@@ -71,8 +71,8 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println("合约部署到", address.Hex())  // 0xE621Ade5a2C0080D8ed406d3504E383eF446ba7B
-	fmt.Println("交易哈希", tx.Hash().Hex()) // 0x516f256a7f52d283ce58e4603151ee1a3336468bbc76453f4f4f58525deef472
+	fmt.Println("合约部署到", address.Hex())  // 0x943b0324A1B2C5825221D0007951469a492DC8db
+	fmt.Println("交易哈希", tx.Hash().Hex()) // 0xe10e383fef000653b38e72b412e84cb036cbb3ecf0773b4ccd1d8a5a4efaa32c
 
 	_ = instance // 合约实例可以通过该实例来调用合约的方法
 }
