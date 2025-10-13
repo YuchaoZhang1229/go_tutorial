@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/04GO-Eth/09订阅区块.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/erc20/IERC20.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/erc20/IERC20Metadata.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/erc20/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/store/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/store/Store.sol" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04GO-Eth/09订阅区块.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/09订阅区块.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04GO-Eth/erc20/erc20.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/erc20/erc20.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +93,11 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\02gin框架初识" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\erc20" />
+      <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\store" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\ERC20" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\03交易" />
-      <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\01Web本质" />
     </key>
   </component>
   <component name="RunManager" selected="Go 构建.go build client/03交易">
