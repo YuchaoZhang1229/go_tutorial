@@ -34,9 +34,9 @@ func main() {
 			}
 
 			fmt.Println("区块哈希", block.Hash().Hex())        // 0xbc10defa8dda384c96a17640d84de5578804945d347072e091b4e5f390ddea7f
-			fmt.Println("区块号", block.Number().Uint64())     // 3477413
-			fmt.Println("时间戳", block.Time())                // 1529525947
-			fmt.Println("Nonce", block.Nonce())                // 130524141876765836
+			fmt.Println("区块号", block.Number().Uint64())    // 3477413
+			fmt.Println("时间戳", block.Time())               // 1529525947
+			fmt.Println("Nonce", block.Nonce())            // 130524141876765836
 			fmt.Println("交易数量", len(block.Transactions())) // 7
 		}
 	}

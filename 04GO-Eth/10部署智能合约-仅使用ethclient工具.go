@@ -95,11 +95,8 @@ func main() {
 // 循环查 receipt, 直到查到为止
 func waitForReceipt(client *ethclient.Client, txHash common.Hash) (*types.Receipt, error) {
 	for {
-
 		receipt, err := client.TransactionReceipt(context.Background(), txHash)
-
 		if err == nil {
-
 			return receipt, nil
 		}
 		if err != ethereum.NotFound {
@@ -107,7 +104,5 @@ func waitForReceipt(client *ethclient.Client, txHash common.Hash) (*types.Receip
 		}
 		// 等待一段时间后再次查询
 		time.Sleep(1 * time.Second)
-
 	}
-
 }
