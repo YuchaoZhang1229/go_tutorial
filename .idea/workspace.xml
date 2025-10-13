@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/10部署智能合约-仅使用ethclient工具.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/10部署智能合约-使用abigen工具.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/11加载智能合约.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04GO-Eth/08查询代币余额.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/08查询代币余额.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04GO-Eth/09订阅区块.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/09订阅区块.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/erc20/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/erc20/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

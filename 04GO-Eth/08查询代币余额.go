@@ -33,7 +33,7 @@ func main() {
 	}
 	// 填写代币地址
 	tokenAddress := common.HexToAddress("0xF2758163DF55c7BC9411bD5Ff5F79ed2C4C12d7C")
-	instance, err := token.NewToken(tokenAddress, client)
+	instance, err := token.NewErc20(tokenAddress, client)
 	if err != nil {
 		log.Fatal(err)
 	}
