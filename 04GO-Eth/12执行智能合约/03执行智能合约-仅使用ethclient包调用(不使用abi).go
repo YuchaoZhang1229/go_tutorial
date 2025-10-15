@@ -17,12 +17,12 @@ import (
 
 func main() {
 	contractAddr := "0x943b0324A1B2C5825221D0007951469a492DC8db"
-	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/jHjyr-bsMbTa4uB-gfigcGghwCvG_iSz")
+	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/<YOUR_API_KEY>")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	privateKey, err := crypto.HexToECDSA("a02a2b50874a4f6740500f92b524465c354236641ca49b584bed6704191f72d4")
+	privateKey, err := crypto.HexToECDSA("<Private_Key>")
 	if err != nil {
 		log.Fatal(err)
 	}
