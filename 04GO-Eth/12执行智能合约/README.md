@@ -9,8 +9,7 @@
 
 ## 二、仅使用 ethclient 包调用
 ### 1. 使用 abi 文件
-#### 🔎 **代码模块详解**
-##### 1. 连接区块链网络
+#### 1.1 连接区块链网络
 这部分代码负责与以太坊网络建立一个连接通道。
 ```go
 client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/<YOUR_API_KEY>")
@@ -21,7 +20,7 @@ if err != nil {
 - ethclient.Dial：函数用于建立一个与以太坊节点的远程过程调用（RPC）连接。
 - 网络地址：代码中使用的 https://...是连接到 Sepolia 测试网的节点服务。测试网用于开发和测试，不使用真实的有价货币
 
-##### 2. 地址推导
+#### 1.2 地址推导
 这部分代码处理交易发送者的身份验证。
 go
 ```go
@@ -34,7 +33,7 @@ fromAddress := crypto.PubkeyToAddress(*publicKeyECDSA)
 - **私钥**：是控制账户资产和权限的最高凭证，**绝对不可以泄露**。在生产环境中，应使用安全的密钥管理系统（如加密文件或硬件钱包）替代代码中的明文私钥。
 - **地址推导**：以太坊地址是从私钥对应的公钥经过哈希计算得出的，可以公开分享，用于接收资产
 
-##### 3. 构造交易数据
+#### 1.3 构造交易数据
 ```go
 nonce, err := client.PendingNonceAt(context.Background(), fromAddress)
 gasPrice, err := client.SuggestGasPrice(context.Background())
@@ -46,7 +45,7 @@ gasPrice, err := client.SuggestGasPrice(context.Background())
   - **Gas Limit** 是你愿意为这笔交易消耗的最大 Gas 数量（代码中硬编码为 300000）。设置过低可能导致交易失败（但已消耗的Gas不退还）
 
 
-##### 4. 编码交易数据 (与合约交互的核心)
+#### 1.4 编码交易数据 (与合约交互的核心)
 这是与智能合约交互最关键的一步，即如何告诉合约“你想调用哪个函数”以及“传递什么参数”。
 ```go
 contractABI, err := abi.JSON(strings.NewReader(`[...]`)) // 1. 加载ABI
@@ -55,7 +54,7 @@ input, err := contractABI.Pack("setItem", key, value) // 2. 打包数据
 **ABI 打包**：abi.Pack函数根据 ABI 定义，将函数名 ```setItem``` 和参数 ```key```, ```value``` 编码成以太坊虚拟机可以理解的二进制数据（input）。这笔数据将作为交易 Data字段的内容
 
 
-##### 5. 创建、签名与发送交易 (交易)
+#### 1.5 创建、签名与发送交易 (交易)
 将前述所有部分组合成一笔完整的交易，并用私钥签名后广播到网络。
 ```go
 tx := types.NewTransaction(nonce, common.HexToAddress(contractAddr), big.NewInt(0), 300000, gasPrice, input)
@@ -66,7 +65,7 @@ err = client.SendTransaction(context.Background(), signedTx)
 - **交易签名**：使用私钥对交易进行签名，以证明你有权从该账户发起此交易
 - **waitForReceipt函数**：这是一个自定义的循环等待函数，用于等待交易被网络确认并获取收据。交易收据包含了交易的最终执行结果（如状态、Gas 实际消耗量等）
 
-##### 6. 查询合约状态（调用）
+#### 1.6 查询合约状态（调用）
 在交易确认后，通过调用的方式查询合约状态，验证数据是否已正确写入。 
 ```go
 callInput, err := contractABI.Pack("items", key) // 1. 打包查询请求
@@ -76,7 +75,7 @@ var unpacked [32]byte
 contractABI.UnpackIntoInterface(&unpacked, "items", result) // 4. 解析结果
 ```
 - **调用**：client.CallContract在本地节点执行合约代码，不会产生交易，也不消耗 Gas 。它直接返回函数执行的结果
-#### 💡 关键知识点与交互模式对比
+#### 1.7 💡关键知识点与交互模式对比
 | **特性**             | **交易**                    | **调用**        |
 |----------------|-----------------------|-----------|
 | **操作类型**           | 写操作（修改状态）             | 读操作（查询状态） |
@@ -91,7 +90,7 @@ contractABI.UnpackIntoInterface(&unpacked, "items", result) // 4. 解析结果
 - 这种方式一般只会在调用合约方法以及参数固定并且无返回值的方法时用的比较多
 - 各种数据类型编码方式具体可以查看 abi 包中的 ```Pack``` 方法（ ```go-ethereum/accounts/abi/pack.go```），返回数据解析查看 abi 包中的 ```UnpackIntoInterface``` 方法（```go-ethereum/accounts/abi/unpack.go```）
 
-#### 准备合约数据 input
+#### 2.1 准备合约数据 input
 ```go
 contractABI, err := abi.JSON(strings.NewReader(`[{"inputs":[{"internalType":"string","name":"_version","type":"string"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"key","type":"bytes32"},{"indexed":false,"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"ItemSet","type":"event"},{"inputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"name":"items","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"key","type":"bytes32"},{"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"setItem","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"version","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}]`))
 if err != nil {
@@ -123,7 +122,7 @@ input = append(input, key[:]...)
 input = append(input, value[:]...)
 ```
 
-#### 准备查询数据 callMsg
+#### 2.2 准备查询数据 callMsg
 ```go
 callInput, err := contractABI.Pack("items", key)
 if err != nil {
@@ -151,7 +150,7 @@ callMsg := ethereum.CallMsg{
 }
 ```
 
-#### 解析返回值
+#### 2.3 解析返回值
 ```go
 result, err := client.CallContract(context.Background(), callMsg, nil)
 if err != nil {
