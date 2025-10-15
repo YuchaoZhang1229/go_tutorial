@@ -13,18 +13,15 @@ import (
 	store "github.com/go-tutorial/04GO-Eth/store"
 )
 
-const (
-	contractAddr = "0x943b0324A1B2C5825221D0007951469a492DC8db"
-)
-
 func main() {
-	// 1. 创建ethclient实例
+	// 1. 创建 ethclient 实例
 	client, err := ethclient.Dial("https://eth-sepolia.g.alchemy.com/v2/<API_KEY>")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// 2. 创建合约实例
+	contractAddr := "0x943b0324A1B2C5825221D0007951469a492DC8db"
 	storeContract, err := store.NewStore(common.HexToAddress(contractAddr), client)
 	if err != nil {
 		log.Fatal(err)
