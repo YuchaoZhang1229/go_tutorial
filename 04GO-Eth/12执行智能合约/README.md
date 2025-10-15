@@ -87,7 +87,7 @@ contractABI.UnpackIntoInterface(&unpacked, "items", result) // 4. 解析结果
 - 这种方式一般只会在调用合约方法以及参数固定并且无返回值的方法时用的比较多
 - 各种数据类型编码方式具体可以查看 abi 包中的 ```Pack``` 方法（ ```go-ethereum/accounts/abi/pack.go```），返回数据解析查看 abi 包中的 ```UnpackIntoInterface``` 方法（```go-ethereum/accounts/abi/unpack.go```）
 
-#### 准备合约数据
+#### 准备合约数据 input
 ```go
 contractABI, err := abi.JSON(strings.NewReader(`[{"inputs":[{"internalType":"string","name":"_version","type":"string"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"key","type":"bytes32"},{"indexed":false,"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"ItemSet","type":"event"},{"inputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"name":"items","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"key","type":"bytes32"},{"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"setItem","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"version","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}]`))
 if err != nil {
@@ -103,8 +103,6 @@ copy(value[:], []byte("demo_save_value_use_abi_11111"))
 input, err := contractABI.Pack(methodName, key, value)
 ```
 替换成
-
-
 ```go
 methodSignature := []byte("setItem(bytes32,bytes32)")
 methodSelector := crypto.Keccak256(methodSignature)[:4]
@@ -121,7 +119,7 @@ input = append(input, key[:]...)
 input = append(input, value[:]...)
 ```
 
-#### 准备查询数据
+#### 准备查询数据 callMsg
 ```go
 callInput, err := contractABI.Pack("items", key)
 if err != nil {
