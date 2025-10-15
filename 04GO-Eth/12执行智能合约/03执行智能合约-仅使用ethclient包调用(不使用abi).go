@@ -57,6 +57,15 @@ func main() {
 	copy(key[:], []byte("demo_save_key_no_use_abi"))
 	copy(value[:], []byte("demo_save_value_no_use_abi_11111"))
 
+	//GasTipCap, err := client.SuggestGasTipCap(context.Background())
+	//header, err := client.HeaderByNumber(context.Background(), nil)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	//gasFeeCap := new(big.Int).Add(
+	//	header.BaseFee,
+	//	new(big.Int).Mul(gasPrice, big.NewInt(100)))
+
 	// 组合调用数据
 	var input []byte
 	input = append(input, methodSelector...)
@@ -71,9 +80,9 @@ func main() {
 	//tx := types.NewTx(&types.DynamicFeeTx{
 	//	ChainID:   chainID,
 	//	Nonce:     nonce,
-	//	GasTipCap: big.NewInt(1000000000), // 1 Gwei
-	//	GasFeeCap: big.NewInt(1000000000), // 1 Gwei
-	//	Gas:       uint64(21000),
+	//	GasTipCap: new(big.Int).Mul(gasPrice, big.NewInt(10)),
+	//	GasFeeCap: gasFeeCap,
+	//	Gas:       uint64(300000),
 	//	To:        &toAddress,
 	//	Value:     big.NewInt(0),
 	//	Data:      input,
