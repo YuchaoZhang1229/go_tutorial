@@ -67,6 +67,17 @@ func main() {
 	// 创建交易并签名交易
 	chainID := big.NewInt(int64(11155111))
 	tx := types.NewTransaction(nonce, common.HexToAddress(contractAddr), big.NewInt(0), 300000, gasPrice, input)
+	//toAddress := common.HexToAddress(contractAddr)
+	//tx := types.NewTx(&types.DynamicFeeTx{
+	//	ChainID:   chainID,
+	//	Nonce:     nonce,
+	//	GasTipCap: big.NewInt(1000000000), // 1 Gwei
+	//	GasFeeCap: big.NewInt(1000000000), // 1 Gwei
+	//	Gas:       uint64(21000),
+	//	To:        &toAddress,
+	//	Value:     big.NewInt(0),
+	//	Data:      input,
+	//})
 	signedTx, err := types.SignTx(tx, types.NewEIP155Signer(chainID), privateKey)
 	if err != nil {
 		log.Fatal(err)
