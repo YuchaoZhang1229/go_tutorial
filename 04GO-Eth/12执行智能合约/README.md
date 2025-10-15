@@ -89,18 +89,18 @@ contractABI.UnpackIntoInterface(&unpacked, "items", result) // 4. 解析结果
 
 #### 准备合约数据
 ```go
-	contractABI, err := abi.JSON(strings.NewReader(`[{"inputs":[{"internalType":"string","name":"_version","type":"string"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"key","type":"bytes32"},{"indexed":false,"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"ItemSet","type":"event"},{"inputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"name":"items","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"key","type":"bytes32"},{"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"setItem","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"version","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}]`))
-	if err != nil {
-		log.Fatal(err)
-	}
+contractABI, err := abi.JSON(strings.NewReader(`[{"inputs":[{"internalType":"string","name":"_version","type":"string"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"key","type":"bytes32"},{"indexed":false,"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"ItemSet","type":"event"},{"inputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"name":"items","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"key","type":"bytes32"},{"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"setItem","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"version","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}]`))
+if err != nil {
+    log.Fatal(err)
+}
 
-	methodName := "setItem"
-	var key [32]byte
-	var value [32]byte
+methodName := "setItem"
+var key [32]byte
+var value [32]byte
 
-	copy(key[:], []byte("demo_save_key_use_abi"))
-	copy(value[:], []byte("demo_save_value_use_abi_11111"))
-	input, err := contractABI.Pack(methodName, key, value)
+copy(key[:], []byte("demo_save_key_use_abi"))
+copy(value[:], []byte("demo_save_value_use_abi_11111"))
+input, err := contractABI.Pack(methodName, key, value)
 ```
 替换成
 
