@@ -83,4 +83,94 @@ contractABI.UnpackIntoInterface(&unpacked, "items", result) // 4. 解析结果
 | **代码中的方法**         | SendTransaction | CallContract |
 
 ### 2. 不使用 abi 文件
+在不使用 abi 文件调用合约时，仅在构建交易的 calldata 时和查询数据时有些区别，其余步骤基本相同。
+- 这种方式一般只会在调用合约方法以及参数固定并且无返回值的方法时用的比较多
+- 各种数据类型编码方式具体可以查看 abi 包中的 ```Pack``` 方法（ ```go-ethereum/accounts/abi/pack.go```），返回数据解析查看 abi 包中的 ```UnpackIntoInterface``` 方法（```go-ethereum/accounts/abi/unpack.go```）
 
+#### 准备合约数据
+```go
+	contractABI, err := abi.JSON(strings.NewReader(`[{"inputs":[{"internalType":"string","name":"_version","type":"string"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"internalType":"bytes32","name":"key","type":"bytes32"},{"indexed":false,"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"ItemSet","type":"event"},{"inputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"name":"items","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"key","type":"bytes32"},{"internalType":"bytes32","name":"value","type":"bytes32"}],"name":"setItem","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"version","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}]`))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	methodName := "setItem"
+	var key [32]byte
+	var value [32]byte
+
+	copy(key[:], []byte("demo_save_key_use_abi"))
+	copy(value[:], []byte("demo_save_value_use_abi_11111"))
+	input, err := contractABI.Pack(methodName, key, value)
+```
+替换成
+
+
+```go
+methodSignature := []byte("setItem(bytes32,bytes32)")
+methodSelector := crypto.Keccak256(methodSignature)[:4]
+
+var key [32]byte
+var value [32]byte
+copy(key[:], []byte("demo_save_key_no_use_abi"))
+copy(value[:], []byte("demo_save_value_no_use_abi_11111"))
+
+// 组合调用数据
+var input []byte
+input = append(input, methodSelector...)
+input = append(input, key[:]...)
+input = append(input, value[:]...)
+```
+
+#### 准备查询数据
+```go
+callInput, err := contractABI.Pack("items", key)
+if err != nil {
+    log.Fatal(err)
+}
+to := common.HexToAddress(contractAddr)
+callMsg := ethereum.CallMsg{
+    To:   &to,
+    Data: callInput,
+}
+```
+替换成
+```go
+itemsSignature := []byte("items(bytes32)")
+itemsSelector := crypto.Keccak256(itemsSignature)[:4]
+
+var callInput []byte
+callInput = append(callInput, itemsSelector...)
+callInput = append(callInput, key[:]...)
+
+to := common.HexToAddress(contractAddr)
+callMsg := ethereum.CallMsg{
+    To:   &to,
+    Data: callInput,
+}
+```
+
+#### 解析返回值
+```go
+result, err := client.CallContract(context.Background(), callMsg, nil)
+if err != nil {
+    log.Fatal(err)
+}
+
+var unpacked [32]byte
+contractABI.UnpackIntoInterface(&unpacked, "items", result)
+if err != nil {
+    log.Fatal(err)
+}
+fmt.Println("is value saving in contract equals to origin value:", unpacked == value)
+```
+替换成
+```go
+result, err := client.CallContract(context.Background(), callMsg, nil)
+if err != nil {
+    log.Fatal(err)
+}
+
+var unpacked [32]byte
+copy(unpacked[:], result)
+fmt.Println("is value saving in contract equals to origin value:", unpacked == value)
+```
