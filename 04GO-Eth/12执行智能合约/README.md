@@ -1,7 +1,7 @@
 ## 一、使用 abigen 工具生成的代码
 | **操作**           | **代码示例**                                                                                                                                          | **关键点**      |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| **合约实例化**        | store.NewStore(address, client)                                                                                                                   | 依赖自动生成的Go包装文件，提供类型安全的方法调用    |
+| **合约实例化**        | ```store.NewStore(address, client) ```                                                                                                                  | 依赖自动生成的Go包装文件，提供类型安全的方法调用    |
 | **发送交易**         | ```opt, err := bind.NewKeyedTransactorWithChainID(privateKey, big.NewInt(11155111))```<br>```tx, err := storeContract.SetItem(opt, key, value)``` | 修改状态，需支付Gas，返回交易哈希，异步确认   |
 | **调用查询**         | 	```callOpt := &bind.CallOpts{Context: context.Background()}```<br>```valueInContract, err := storeContract.Items(callOpt, key)```                            | 读取状态，免费，同步返回结果，不改变链上数据           |
 
