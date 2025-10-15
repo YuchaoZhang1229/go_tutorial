@@ -62,7 +62,7 @@ func main() {
 	input = append(input, methodSelector...)
 	input = append(input, key[:]...)
 	input = append(input, value[:]...)
-	// ------------------------替换代码------------------------
+	// -------------------------------------------------------
 
 	// 创建交易并签名交易
 	chainID := big.NewInt(int64(11155111))
@@ -101,7 +101,7 @@ func main() {
 		To:   &to,
 		Data: callInput,
 	}
-	// ------------------------替换代码------------------------
+	// -------------------------------------------------------
 
 	result, err := client.CallContract(context.Background(), callMsg, nil)
 	if err != nil {
@@ -113,7 +113,7 @@ func main() {
 	var unpacked [32]byte
 	copy(unpacked[:], result)
 	fmt.Println("is value saving in contract equals to origin value:", unpacked == value)
-	// ------------------------替换代码------------------------
+	// -------------------------------------------------------
 }
 
 func waitForReceipt1(client *ethclient.Client, txHash common.Hash) (*types.Receipt, error) {
