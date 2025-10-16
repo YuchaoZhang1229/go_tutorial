@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="go-eth">
-      <change afterPath="$PROJECT_DIR$/04GO-Eth/13合约事件/01合约事件日志查询与订阅.go" afterDir="false" />
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="go task">
+      <change afterPath="$PROJECT_DIR$/04GO-Eth/00Go_Eth_Task/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/01查询区块.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/01查询区块/01查询区块.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/02查询交易.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/02查询交易/02查询交易.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/03查询收据.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/03查询收据/03查询收据.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/04创建新钱包.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/04创建新钱包/04创建新钱包.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/05ETH转账.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/05ETH转账/05ETH转账.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/06代币转账.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/06代币转账/06代币转账.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/07查询账户余额.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/07查询账户余额/07查询账户余额.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/08查询代币余额.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/08查询代币余额/08查询代币余额.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/09订阅区块.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/09订阅区块/09订阅区块.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/10部署智能合约-仅使用ethclient工具.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/10部署智能合约/02部署智能合约-仅使用ethclient工具.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/10部署智能合约-使用abigen工具.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/10部署智能合约/01部署智能合约-使用abigen工具.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/code/11加载智能合约.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/11加载智能合约/11加载智能合约.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/store/Store.sol" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/store/Store.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/store/Store_sol_Store.abi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04GO-Eth/store/Store_sol_Store.bin" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/store/Store_sol_Store.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,11 +95,11 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\02gin框架初识" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\web3\go\go-tutorial\01Go" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\11加载智能合约" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\10部署智能合约" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\09订阅区块" />
-      <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\08查询代币余额" />
     </key>
   </component>
   <component name="RunManager" selected="Go 构建.go build 01执行智能合约-使用abigen工具.go">
@@ -211,7 +196,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="go-eth" />
-    <option name="LAST_COMMIT_MESSAGE" value="go-eth" />
+    <MESSAGE value="go task" />
+    <option name="LAST_COMMIT_MESSAGE" value="go task" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
