@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="go task">
-      <change afterPath="$PROJECT_DIR$/04GO-Eth/00Go_Eth_Task/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04GO-Eth/00Go_Eth_Task/Task1/blockchain_interaciton.go" beforeDir="false" afterPath="$PROJECT_DIR$/04GO-Eth/00Go_Eth_Task/Task1/blockchain_interaciton.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,7 @@
     "Go 构建.go build client/01客户端.executor": "Run",
     "Go 构建.go build client/03交易.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth/11加载智能合约.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth/12执行智能合约.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth/13合约事件.executor": "Run",
@@ -102,7 +103,7 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\09订阅区块" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build 01执行智能合约-使用abigen工具.go">
+  <component name="RunManager" selected="Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1">
     <configuration name="go build 01执行智能合约-使用abigen工具.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$/04GO-Eth" />
@@ -127,6 +128,15 @@
       <filePath value="$PROJECT_DIR$/04GO-Eth/11加载智能合约/11加载智能合约.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$/04GO-Eth" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/04GO-Eth/00Go_Eth_Task/Task1/blockchain_interaciton.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build github.com/go-tutorial/04GO-Eth/11加载智能合约" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$/04GO-Eth" />
@@ -136,29 +146,20 @@
       <filePath value="$PROJECT_DIR$/04GO-Eth/11加载智能合约/11加载智能合约.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/go-tutorial/04GO-Eth/13合约事件" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/04GO-Eth" />
-      <kind value="PACKAGE" />
-      <package value="github.com/go-tutorial/04GO-Eth/13合约事件" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/04GO-Eth/13合约事件/01合约事件日志查询与订阅.go" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Go 构建.go build 01合约事件日志查询与订阅.go" />
       <item itemvalue="Go 构建.go build 01执行智能合约-使用abigen工具.go" />
       <item itemvalue="Go 构建.go build 11加载智能合约.go" />
+      <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1" />
       <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/11加载智能合约" />
-      <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/13合约事件" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1" />
         <item itemvalue="Go 构建.go build 01执行智能合约-使用abigen工具.go" />
         <item itemvalue="Go 构建.go build 11加载智能合约.go" />
         <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/11加载智能合约" />
         <item itemvalue="Go 构建.go build 01合约事件日志查询与订阅.go" />
-        <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/13合约事件" />
       </list>
     </recent_temporary>
   </component>

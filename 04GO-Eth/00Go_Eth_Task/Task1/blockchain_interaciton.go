@@ -32,7 +32,7 @@ func main() {
 	fmt.Println("交易数量:", len(block.Transactions()))
 
 	// 2. 发送交易
-	privateKey, err := crypto.HexToECDSA("a02a2b50874a4f6740500f92b524465c354236641ca49b584bed6704191f72d4")
+	privateKey, err := crypto.HexToECDSA("YOUR_PRIVATE_KEY")
 	if err != nil {
 		log.Fatal(err)
 	}
