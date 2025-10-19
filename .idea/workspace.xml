@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="go task">
-      <change afterPath="$PROJECT_DIR$/05Grpc/README.md" afterDir="false" />
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="grpc">
+      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/client/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/server/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/server/proto/hello.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/server/proto/hello.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/server/proto/hello_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05gRPC/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/05gRPC/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +73,9 @@
     "Go 构建.go build github.com/go-tutorial/04GO-Eth/11加载智能合约.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth/12执行智能合约.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth/13合约事件.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/01Hello World/server.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/client.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/server.executor": "Run",
     "Go 构建.go build main.executor": "Run",
     "Go 构建.go build main.go.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -82,7 +90,7 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "C:/Users/user",
+    "last_opened_file_path": "E:/OneDrive/web3/go/go-tutorial/05gRPC/01Hello World/server",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -92,35 +100,20 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\web3\go\go-tutorial\05gRPC\01Hello World\server" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\03交易" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\05template语法详解" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\03Gin\02gin框架初识" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\web3\go\go-tutorial\05gRPC\01Hello World\client" />
+      <recent name="E:\OneDrive\web3\go\go-tutorial\05gRPC\01Hello World" />
+      <recent name="E:\OneDrive\web3\go\go-tutorial\05gRPC\proto" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\00Go_Eth_Task\Task2\Counter" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\01Go" />
-      <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\11加载智能合约" />
-      <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\10部署智能合约" />
-      <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task2">
-    <configuration name="go build 01执行智能合约-使用abigen工具.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/04GO-Eth" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/04GO-Eth/12执行智能合约/01执行智能合约-使用abigen工具.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 11加载智能合约.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/04GO-Eth" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/04GO-Eth/11加载智能合约/11加载智能合约.go" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/server">
     <configuration name="go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$/04GO-Eth" />
@@ -139,29 +132,47 @@
       <filePath value="$PROJECT_DIR$/04GO-Eth/00Go_Eth_Task/Task2/smartcontract_interaciton.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/go-tutorial/04GO-Eth/11加载智能合约" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build github.com/go-tutorial/05gRPC/01Hello World/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/04GO-Eth" />
+      <working_directory value="$PROJECT_DIR$/05gRPC" />
       <kind value="PACKAGE" />
-      <package value="github.com/go-tutorial/04GO-Eth/11加载智能合约" />
+      <package value="github.com/go-tutorial/05gRPC/01Hello World/server" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/04GO-Eth/11加载智能合约/11加载智能合约.go" />
+      <filePath value="$PROJECT_DIR$/05gRPC/01Hello World/server/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/go-tutorial/05gRPC/01HelloWorld/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$/05gRPC" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-tutorial/05gRPC/01HelloWorld/client" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/05gRPC/01HelloWorld/client/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/go-tutorial/05gRPC/01HelloWorld/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$/05gRPC" />
+      <kind value="PACKAGE" />
+      <package value="github.com/go-tutorial/05gRPC/01HelloWorld/server" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/05gRPC/01HelloWorld/server/main.go" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go 构建.go build 01执行智能合约-使用abigen工具.go" />
-      <item itemvalue="Go 构建.go build 11加载智能合约.go" />
+      <item itemvalue="Go 构建.go build github.com/go-tutorial/05gRPC/01Hello World/server" />
+      <item itemvalue="Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/client" />
+      <item itemvalue="Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/server" />
       <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1" />
       <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task2" />
-      <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/11加载智能合约" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/client" />
+        <item itemvalue="Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/server" />
+        <item itemvalue="Go 构建.go build github.com/go-tutorial/05gRPC/01Hello World/server" />
         <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task2" />
         <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1" />
-        <item itemvalue="Go 构建.go build 01执行智能合约-使用abigen工具.go" />
-        <item itemvalue="Go 构建.go build 11加载智能合约.go" />
-        <item itemvalue="Go 构建.go build github.com/go-tutorial/04GO-Eth/11加载智能合约" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +211,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="go-eth" />
     <MESSAGE value="go task" />
-    <option name="LAST_COMMIT_MESSAGE" value="go task" />
+    <MESSAGE value="grpc" />
+    <option name="LAST_COMMIT_MESSAGE" value="grpc" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
