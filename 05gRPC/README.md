@@ -38,18 +38,18 @@ gRPC 采用 “**服务定义**” 来约定远 程服务。先通过一种与�
   3. 序列化/反序列化：调用生成类的接口将对象序列化为二进制数据，或反向解析
 
 ### 三、安装插件
-1. Protobuf
+1. **Protobuf**
 ```shell
 winget install protobuf
 protoc --version # Ensure compiler version is 3+
 ```
 
-2. 安装gRPC核心库
+2. **安装gRPC核心库**
 ```shell
 go get google.golang.org/grpc
 ```
    
-3. 安装protocol编译器
+3. **安装protocol编译器**
 ```shell
 # 安装protobuf生成插件
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest

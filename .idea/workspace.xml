@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="grpc">
-      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/client/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/server/proto/hello.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/server/proto/hello.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05gRPC/01HelloWorld/server/proto/hello_grpc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/05gRPC/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/05gRPC/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
