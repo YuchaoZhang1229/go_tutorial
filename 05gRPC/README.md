@@ -59,7 +59,7 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 export PATH="$PATH:$(go env GOPATH)/bin"
 ```
 
-### 四、安装插件
+### 四、编写一个RPC服务
 
 #### 1. Proto文件编写
 ```protobuf
