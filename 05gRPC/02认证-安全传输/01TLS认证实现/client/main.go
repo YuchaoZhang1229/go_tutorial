@@ -33,5 +33,4 @@ func main() {
 	}
 
 	fmt.Println(resp.GetResponseMsg())
-
 }
