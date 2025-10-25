@@ -2,7 +2,7 @@ Go世界里最流行的Web框架，[Github](https://github.com/gin-gonic/gin)上
 
 ```go
 // 项目初始化
-go mod init
+go mod init 
 // 安装gin
 go get -u github.com/gin-gonic/gin
 // 运行
