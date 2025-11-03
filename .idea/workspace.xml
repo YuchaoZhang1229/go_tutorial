@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="go-redis">
-      <change afterPath="$PROJECT_DIR$/08go-cli/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/cmd/root.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/cmd/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/config/config.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/config/defaults.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/conifgs/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/internal/database/database.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/internal/logger/logger.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/internal/server/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08go-cli/main.go" afterDir="false" />
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="go-cli">
+      <change afterPath="$PROJECT_DIR$/00leetcode/01array/leetcode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00leetcode/01array/动态数组.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00leetcode/01array/静态数组.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00leetcode/02list/lc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00leetcode/02list/单链表基础.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00leetcode/02list/双链表基础.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,8 +82,16 @@
     &quot;Go 构建.go build github.com/go-tutorial/06go-redis/01connect-redis.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build github.com/go-tutorial/06go-redis/02data-types.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build github.com/go-tutorial/06go-redis/03advanced-operations.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build leetcode.go.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build main.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build main.go.executor&quot;: &quot;Debug&quot;,
+    &quot;Go 构建.go build 动态数组.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build 单链表基础.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build 双链表基础.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build 哈希表.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build 基础.go (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build 基础.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build 静态数组.go.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
@@ -122,72 +126,62 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\05gRPC\01Hello World\server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\web3\go\go-tutorial\00leetcode\01数组" />
+      <recent name="E:\OneDrive\web3\go\go-tutorial\01go\00Go_Task\Task1" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli\conifgs" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli\internal\database" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli" />
-      <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli\config" />
-      <recent name="E:\OneDrive\web3\go\go-tutorial\05gRPC\02认证-安全传输\01TLS认证实现" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build github.com/go-tutorial/06go-redis/03advanced-operations">
-    <configuration name="go build github.com/go-tutorial/05gRPC/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go 构建.go build 静态数组.go lc.go">
+    <configuration name="go build 静态数组.go lc.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/05gRPC" />
-      <kind value="PACKAGE" />
-      <package value="github.com/go-tutorial/05gRPC/client" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/05gRPC/client/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/go-tutorial/06go-redis/01connect-redis" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/06go-redis" />
-      <kind value="PACKAGE" />
-      <package value="github.com/go-tutorial/06go-redis/01connect-redis" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/06go-redis/01connect-redis/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/go-tutorial/06go-redis/02data-types" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/06go-redis" />
-      <kind value="PACKAGE" />
-      <package value="github.com/go-tutorial/06go-redis/02data-types" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/06go-redis/02data-types/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/go-tutorial/06go-redis/03advanced-operations" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/06go-redis" />
-      <kind value="PACKAGE" />
-      <package value="github.com/go-tutorial/06go-redis/03advanced-operations" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/06go-redis/03advanced-operations/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$/06go-redis" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/06go-redis/03advanced-operations/main.go" />
+      <filePath value="$PROJECT_DIR$/00leetcode/01数组/静态数组.go|$PROJECT_DIR$/00leetcode/02list/lc.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 双链表基础.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/00leetcode/链表/双链表基础.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 哈希表.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/00leetcode/哈希表.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build 动态数组.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/00leetcode/01数组/动态数组.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build leetcode.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/00leetcode/02链表/leetcode.go" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go 构建.go build github.com/go-tutorial/06go-redis/02data-types" />
-      <item itemvalue="Go 构建.go build github.com/go-tutorial/06go-redis/03advanced-operations" />
-      <item itemvalue="Go 构建.go build main.go" />
-      <item itemvalue="Go 构建.go build github.com/go-tutorial/06go-redis/01connect-redis" />
-      <item itemvalue="Go 构建.go build github.com/go-tutorial/05gRPC/client" />
+      <item itemvalue="Go 构建.go build 静态数组.go lc.go" />
+      <item itemvalue="Go 构建.go build leetcode.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 构建.go build github.com/go-tutorial/06go-redis/03advanced-operations" />
-        <item itemvalue="Go 构建.go build main.go" />
-        <item itemvalue="Go 构建.go build github.com/go-tutorial/06go-redis/02data-types" />
-        <item itemvalue="Go 构建.go build github.com/go-tutorial/06go-redis/01connect-redis" />
-        <item itemvalue="Go 构建.go build github.com/go-tutorial/05gRPC/client" />
+        <item itemvalue="Go 构建.go build leetcode.go" />
+        <item itemvalue="Go 构建.go build 静态数组.go lc.go" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +223,8 @@
     <MESSAGE value="grpc" />
     <MESSAGE value="目录修改" />
     <MESSAGE value="go-redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="go-redis" />
+    <MESSAGE value="go-cli" />
+    <option name="LAST_COMMIT_MESSAGE" value="go-cli" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
