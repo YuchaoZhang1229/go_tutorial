@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="go-cli">
-      <change afterPath="$PROJECT_DIR$/00leetcode/01array/leetcode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00leetcode/01array/动态数组.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00leetcode/01array/静态数组.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00leetcode/02list/lc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00leetcode/02list/单链表基础.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00leetcode/02list/双链表基础.go" afterDir="false" />
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="leetcode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00leetcode/02list/leetcode.go" beforeDir="false" afterPath="$PROJECT_DIR$/00leetcode/02list/leetcode.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,77 +41,78 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Go 构建.go build 01合约事件日志查询与订阅.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 01执行智能合约-使用abigen工具.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/01Web本质.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/02gin框架初识.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/03RESTfulAPI.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/04template初识.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/06template嵌套.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/07template继承.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/11gin获取querystring参数.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03Gin/14gin参数绑定.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 03执行智能合约-仅使用ethclient包调用(不使用abi).go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 11加载智能合约.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build client.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build client.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build client/01客户端.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build client/03交易.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/04GO-Eth.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task2.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/04GO-Eth/11加载智能合约.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/04GO-Eth/12执行智能合约.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/04GO-Eth/13合约事件.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/05gRPC/01Hello World/server.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/client.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/server.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/05gRPC/02认证-安全传输/01TLS认证实现/server.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/05gRPC/client.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/05gRPC/server.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/06go-redis/01connect-redis.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/06go-redis/02data-types.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/go-tutorial/06go-redis/03advanced-operations.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build leetcode.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.go.executor&quot;: &quot;Debug&quot;,
-    &quot;Go 构建.go build 动态数组.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 单链表基础.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 双链表基础.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 哈希表.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 基础.go (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 基础.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build 静态数组.go.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginOnboarding&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.GoLinterPluginStorageMigration&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/web3/go/go-tutorial/04GO-Eth/erc20&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "DefaultGoTemplateProperty": "Go File",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Go 构建.go build 01合约事件日志查询与订阅.go.executor": "Run",
+    "Go 构建.go build 01执行智能合约-使用abigen工具.go.executor": "Run",
+    "Go 构建.go build 03Gin/01Web本质.executor": "Run",
+    "Go 构建.go build 03Gin/02gin框架初识.executor": "Run",
+    "Go 构建.go build 03Gin/03RESTfulAPI.executor": "Run",
+    "Go 构建.go build 03Gin/04template初识.executor": "Run",
+    "Go 构建.go build 03Gin/06template嵌套.executor": "Run",
+    "Go 构建.go build 03Gin/07template继承.executor": "Run",
+    "Go 构建.go build 03Gin/11gin获取querystring参数.executor": "Run",
+    "Go 构建.go build 03Gin/14gin参数绑定.executor": "Run",
+    "Go 构建.go build 03执行智能合约-仅使用ethclient包调用(不使用abi).go.executor": "Run",
+    "Go 构建.go build 11加载智能合约.go.executor": "Run",
+    "Go 构建.go build client.executor": "Run",
+    "Go 构建.go build client.go.executor": "Run",
+    "Go 构建.go build client/01客户端.executor": "Run",
+    "Go 构建.go build client/03交易.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/04GO-Eth.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task2.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/04GO-Eth/11加载智能合约.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/04GO-Eth/12执行智能合约.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/04GO-Eth/13合约事件.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/01Hello World/server.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/client.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/01HelloWorld/server.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/02认证-安全传输/01TLS认证实现/server.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/client.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/05gRPC/server.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/06go-redis/01connect-redis.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/06go-redis/02data-types.executor": "Run",
+    "Go 构建.go build github.com/go-tutorial/06go-redis/03advanced-operations.executor": "Run",
+    "Go 构建.go build leetcode.go (1).executor": "Run",
+    "Go 构建.go build leetcode.go.executor": "Run",
+    "Go 构建.go build main.executor": "Run",
+    "Go 构建.go build main.go.executor": "Debug",
+    "Go 构建.go build 动态数组.go.executor": "Run",
+    "Go 构建.go build 单链表基础.go.executor": "Run",
+    "Go 构建.go build 双链表基础.go.executor": "Run",
+    "Go 构建.go build 哈希表.go.executor": "Run",
+    "Go 构建.go build 基础.go (1).executor": "Run",
+    "Go 构建.go build 基础.go.executor": "Run",
+    "Go 构建.go build 静态数组.go.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "E:/OneDrive/web3/go/go-tutorial/04GO-Eth/erc20",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;redis&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redis"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\OneDrive\web3\go\go-tutorial\04GO-Eth\erc20" />
@@ -133,7 +129,7 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build 静态数组.go lc.go">
+  <component name="RunManager" selected="Go 构建.go build leetcode.go (1)">
     <configuration name="go build 静态数组.go lc.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
@@ -166,6 +162,14 @@
       <filePath value="$PROJECT_DIR$/00leetcode/01数组/动态数组.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build leetcode.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/00leetcode/02list/leetcode.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build leetcode.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
@@ -175,11 +179,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go 构建.go build leetcode.go (1)" />
       <item itemvalue="Go 构建.go build 静态数组.go lc.go" />
       <item itemvalue="Go 构建.go build leetcode.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build leetcode.go (1)" />
         <item itemvalue="Go 构建.go build leetcode.go" />
         <item itemvalue="Go 构建.go build 静态数组.go lc.go" />
       </list>
@@ -224,7 +230,8 @@
     <MESSAGE value="目录修改" />
     <MESSAGE value="go-redis" />
     <MESSAGE value="go-cli" />
-    <option name="LAST_COMMIT_MESSAGE" value="go-cli" />
+    <MESSAGE value="leetcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="leetcode" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
