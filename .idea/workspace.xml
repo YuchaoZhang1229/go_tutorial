@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="leetcode">
-      <change afterPath="$PROJECT_DIR$/00leetcode/00Hot100/01哈希.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00leetcode/00Hot100/02双指针.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00leetcode/00Hot100/03滑动窗口.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01go/08map/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +81,7 @@
     "Go 构建.go build leetcode.go (1).executor": "Run",
     "Go 构建.go build leetcode.go.executor": "Run",
     "Go 构建.go build main.executor": "Run",
-    "Go 构建.go build main.go.executor": "Debug",
+    "Go 构建.go build main.go.executor": "Run",
     "Go 构建.go build 动态数组.go.executor": "Run",
     "Go 构建.go build 单链表基础.go.executor": "Run",
     "Go 构建.go build 双链表基础.go.executor": "Run",
@@ -132,7 +130,7 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build 01哈希.go">
+  <component name="RunManager" selected="Go 构建.go build main.go">
     <configuration name="go build 01哈希.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
@@ -189,14 +187,24 @@
       <filePath value="$PROJECT_DIR$/00leetcode/02链表/leetcode.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/01go/08map/main.go" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go 构建.go build 01哈希.go" />
       <item itemvalue="Go 构建.go build leetcode.go (1)" />
+      <item itemvalue="Go 构建.go build main.go" />
       <item itemvalue="Go 构建.go build 静态数组.go lc.go" />
       <item itemvalue="Go 构建.go build leetcode.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build main.go" />
         <item itemvalue="Go 构建.go build 01哈希.go" />
         <item itemvalue="Go 构建.go build leetcode.go (1)" />
         <item itemvalue="Go 构建.go build leetcode.go" />
