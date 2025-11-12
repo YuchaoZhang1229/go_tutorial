@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="1" />
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="修改目录">
+      <change afterPath="$PROJECT_DIR$/01go/03Go语言标准库/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,11 +124,11 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\05gRPC\01Hello World\server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\web3\go\go-tutorial\01go\01Go语言基础" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\00leetcode\01数组" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\01go\00Go_Task\Task1" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli\conifgs" />
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli\internal\database" />
-      <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli" />
     </key>
   </component>
   <component name="RunManager" selected="Go 构建.go build main.go (1)">
@@ -255,7 +258,8 @@
     <MESSAGE value="基本数据类型和运算符" />
     <MESSAGE value="流程控制" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="修改目录" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改目录" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
