@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="变量与常量">
-      <change afterPath="$PROJECT_DIR$/01go/03基本数据类型/README.md" afterDir="false" />
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="流程控制">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +80,7 @@
     "Go 构建.go build leetcode.go (1).executor": "Run",
     "Go 构建.go build leetcode.go.executor": "Run",
     "Go 构建.go build main.executor": "Run",
+    "Go 构建.go build main.go (1).executor": "Run",
     "Go 构建.go build main.go.executor": "Run",
     "Go 构建.go build 动态数组.go.executor": "Run",
     "Go 构建.go build 单链表基础.go.executor": "Run",
@@ -130,21 +130,13 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build main.go">
+  <component name="RunManager" selected="Go 构建.go build main.go (1)">
     <configuration name="go build 01哈希.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/00leetcode/00Hot100/01哈希.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build 静态数组.go lc.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/00leetcode/01数组/静态数组.go|$PROJECT_DIR$/00leetcode/02list/lc.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build 双链表基础.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -187,6 +179,14 @@
       <filePath value="$PROJECT_DIR$/00leetcode/02链表/leetcode.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/01go/05流程控制/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
@@ -199,16 +199,16 @@
       <item itemvalue="Go 构建.go build 01哈希.go" />
       <item itemvalue="Go 构建.go build leetcode.go (1)" />
       <item itemvalue="Go 构建.go build main.go" />
-      <item itemvalue="Go 构建.go build 静态数组.go lc.go" />
+      <item itemvalue="Go 构建.go build main.go (1)" />
       <item itemvalue="Go 构建.go build leetcode.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build main.go (1)" />
         <item itemvalue="Go 构建.go build main.go" />
         <item itemvalue="Go 构建.go build 01哈希.go" />
         <item itemvalue="Go 构建.go build leetcode.go (1)" />
         <item itemvalue="Go 构建.go build leetcode.go" />
-        <item itemvalue="Go 构建.go build 静态数组.go lc.go" />
       </list>
     </recent_temporary>
   </component>
@@ -254,7 +254,9 @@
     <MESSAGE value="leetcode" />
     <MESSAGE value="并发map" />
     <MESSAGE value="变量与常量" />
-    <option name="LAST_COMMIT_MESSAGE" value="变量与常量" />
+    <MESSAGE value="基本数据类型和运算符" />
+    <MESSAGE value="流程控制" />
+    <option name="LAST_COMMIT_MESSAGE" value="流程控制" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
