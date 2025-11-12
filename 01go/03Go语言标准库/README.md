@@ -13,7 +13,7 @@
 - 字符串与数值互转
 - Atoi/Itoa常用函数
 
-errors - 错误处理
+**errors - 错误处理**
 - errors.New创建错误
 - 错误包装和解包
 
