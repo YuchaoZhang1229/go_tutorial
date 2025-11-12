@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="流程控制">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,7 +254,8 @@
     <MESSAGE value="变量与常量" />
     <MESSAGE value="基本数据类型和运算符" />
     <MESSAGE value="流程控制" />
-    <option name="LAST_COMMIT_MESSAGE" value="流程控制" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
