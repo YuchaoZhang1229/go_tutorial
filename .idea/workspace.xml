@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="leetcode">
-      <change afterPath="$PROJECT_DIR$/01go/08map/main.go" afterDir="false" />
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="并发map">
+      <change afterPath="$PROJECT_DIR$/01go/02变量与常量/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01go/02变量与常量/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01go/02变量与常量/img_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +254,8 @@
     <MESSAGE value="go-redis" />
     <MESSAGE value="go-cli" />
     <MESSAGE value="leetcode" />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode" />
+    <MESSAGE value="并发map" />
+    <option name="LAST_COMMIT_MESSAGE" value="并发map" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
