@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="Go标准库">
+      <change afterPath="$PROJECT_DIR$/01go/03Go语言标准库/05并发编程/context.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01go/03Go语言标准库/05并发编程/sync.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01go/03Go语言标准库/05并发编程/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01go/03Go语言标准库/05并发编程/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +66,7 @@
     "Go 构建.go build client.go.executor": "Run",
     "Go 构建.go build client/01客户端.executor": "Run",
     "Go 构建.go build client/03交易.executor": "Run",
+    "Go 构建.go build context.go.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task1.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/04GO-Eth/00Go_Eth_Task/Task2.executor": "Run",
@@ -85,6 +89,7 @@
     "Go 构建.go build main.go (2).executor": "Run",
     "Go 构建.go build main.go.executor": "Run",
     "Go 构建.go build sort.go.executor": "Run",
+    "Go 构建.go build sync.go.executor": "Run",
     "Go 构建.go build 动态数组.go.executor": "Run",
     "Go 构建.go build 单链表基础.go.executor": "Run",
     "Go 构建.go build 双链表基础.go.executor": "Run",
@@ -133,7 +138,7 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli\internal\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build bytes.go">
+  <component name="RunManager" selected="Go 构建.go build sync.go">
     <configuration name="go build 哈希表.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
@@ -158,12 +163,12 @@
       <filePath value="$PROJECT_DIR$/01go/03Go语言标准库/03数据结构/bytes.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build context.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/01go/05流程控制/main.go" />
+      <filePath value="$PROJECT_DIR$/01go/03Go语言标准库/05并发编程/context.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -174,14 +179,6 @@
       <filePath value="$PROJECT_DIR$/01go/03Go语言标准库/01基础核心库/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/01go/08map/main.go" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build sort.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
@@ -190,20 +187,28 @@
       <filePath value="$PROJECT_DIR$/01go/03Go语言标准库/03数据结构/sort.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build sync.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/01go/03Go语言标准库/05并发编程/sync.go" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go 构建.go build bytes.go" />
+      <item itemvalue="Go 构建.go build context.go" />
       <item itemvalue="Go 构建.go build sort.go" />
-      <item itemvalue="Go 构建.go build main.go" />
-      <item itemvalue="Go 构建.go build main.go (1)" />
+      <item itemvalue="Go 构建.go build sync.go" />
       <item itemvalue="Go 构建.go build main.go (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build sync.go" />
+        <item itemvalue="Go 构建.go build context.go" />
         <item itemvalue="Go 构建.go build bytes.go" />
         <item itemvalue="Go 构建.go build sort.go" />
         <item itemvalue="Go 构建.go build main.go (2)" />
-        <item itemvalue="Go 构建.go build main.go (1)" />
-        <item itemvalue="Go 构建.go build main.go" />
       </list>
     </recent_temporary>
   </component>
