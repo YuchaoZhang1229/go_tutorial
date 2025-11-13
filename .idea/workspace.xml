@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="Go标准库">
-      <change afterPath="$PROJECT_DIR$/01go/01Go语言基础/09函数/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01go/02Go语言深入/06Go依赖管理/README.md" afterDir="false" />
+    <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="Go">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01go/02Go语言深入/06Go依赖管理/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01go/01Go语言基础/00Go依赖管理/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01go/03Go语言标准库/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01go/03Go语言标准库/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -258,7 +261,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="修改目录" />
     <MESSAGE value="Go标准库" />
-    <option name="LAST_COMMIT_MESSAGE" value="Go标准库" />
+    <MESSAGE value="Go" />
+    <option name="LAST_COMMIT_MESSAGE" value="Go" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
