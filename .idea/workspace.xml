@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b318c80c-07fd-41de-938e-611c2b4a55fc" name="更改" comment="Go">
+      <change afterPath="$PROJECT_DIR$/01go/02Go语言深入/01包/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01go/02Go语言深入/01包/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01go/02Go语言深入/01包/pkg/calculator/calc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01go/02Go语言深入/01包/pkg/logger/logger.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01go/02Go语言深入/06Go依赖管理/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01go/01Go语言基础/00Go依赖管理/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01go/03Go语言标准库/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/01go/03Go语言标准库/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01go/01Go语言基础/01Go语言代码结构与基础语法/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/01go/01Go语言基础/01Hello_World/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01go/01Go语言基础/01Go语言代码结构与基础语法/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/01go/01Go语言基础/01Hello_World/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +88,7 @@
     "Go 构建.go build github.com/go-tutorial/06go-redis/01connect-redis.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/06go-redis/02data-types.executor": "Run",
     "Go 构建.go build github.com/go-tutorial/06go-redis/03advanced-operations.executor": "Run",
+    "Go 构建.go build github.com/myapp.executor": "Run",
     "Go 构建.go build leetcode.go (1).executor": "Run",
     "Go 构建.go build leetcode.go.executor": "Run",
     "Go 构建.go build main.executor": "Run",
@@ -140,7 +145,7 @@
       <recent name="E:\OneDrive\web3\go\go-tutorial\08go-cli\internal\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build main.go">
+  <component name="RunManager" selected="Go 构建.go build github.com/myapp">
     <configuration name="go build 哈希表.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
@@ -173,20 +178,21 @@
       <filePath value="$PROJECT_DIR$/01go/03Go语言标准库/05并发编程/context.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build github.com/myapp" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-tutorial" />
+      <working_directory value="$PROJECT_DIR$/01go/02Go语言深入/01包" />
+      <kind value="PACKAGE" />
+      <package value="github.com/myapp" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/01go/02Go语言深入/01包/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-tutorial" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/01go/01Go语言基础/09函数/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build sort.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-tutorial" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/01go/03Go语言标准库/03数据结构/sort.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build sync.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -200,17 +206,17 @@
     <list>
       <item itemvalue="Go 构建.go build bytes.go" />
       <item itemvalue="Go 构建.go build context.go" />
-      <item itemvalue="Go 构建.go build sort.go" />
+      <item itemvalue="Go 构建.go build github.com/myapp" />
       <item itemvalue="Go 构建.go build sync.go" />
       <item itemvalue="Go 构建.go build main.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build github.com/myapp" />
         <item itemvalue="Go 构建.go build main.go" />
         <item itemvalue="Go 构建.go build sync.go" />
         <item itemvalue="Go 构建.go build context.go" />
         <item itemvalue="Go 构建.go build bytes.go" />
-        <item itemvalue="Go 构建.go build sort.go" />
       </list>
     </recent_temporary>
   </component>
